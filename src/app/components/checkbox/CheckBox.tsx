@@ -25,7 +25,7 @@ const CheckBox = ({ lebel, handler = null }) => {
         >
           <path
             d="M14.6023 4.80029L6.90234 12.5003L3.40234 9.00029"
-            stroke={`#02A95C`}
+            stroke={`#3271A6`}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

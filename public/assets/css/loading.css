@@ -26,12 +26,12 @@
 
 .ch-loading-spinner::before {
   animation-direction: reverse;
-  border-right-color: #02a95c;
+  border-right-color: #3271A6;
   right: calc(50% - 4px);
 }
 
 .ch-loading-spinner::after {
-  border-left-color: #02a95c;
+  border-left-color: #3271A6;
   left: calc(50% - 4px);
 }
 

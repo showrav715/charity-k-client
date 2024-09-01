@@ -240,18 +240,18 @@ export default function DirectCheckoutPage() {
                 styles={{
                   control: (baseStyles) => ({
                     ...baseStyles,
-                    border: "1px solid #028347",
+                    border: "1px solid #2d485e",
                     padding: "10px 20px",
                     borderRadius: "8px",
                     boxShadow: "none",
                     "&:hover": {
-                      border: "1px solid #028347",
+                      border: "1px solid #2d485e",
                     },
                   }),
                   option: (baseStyles, state) => ({
                     ...baseStyles,
                     backgroundColor: state.isSelected
-                      ? "#028347"
+                      ? "#2d485e"
                       : state.isFocused
                         ? "#cceede"
                         : "transparent",

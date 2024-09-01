@@ -28,7 +28,7 @@ const DashboardCard: React.FC<IDashboardCard> = ({ img, value, title,currency })
             ${title === "Total Funds Raised" && "bg-[#EFF0FF] border-[#5B68FF]"}
             ${title === "My Donation" && "bg-[#E5F9FF] border-[#00C2FF]"}
             ${title === "Total Withdraw" && "bg-[#FBEEFD] border-[#DA55F0]"}
-            ${title === "Current Balance" && "bg-[#E6F6EF] border-[#02A95C]"}
+            ${title === "Current Balance" && "bg-[#E6F6EF] border-[#3271A6]"}
         `}
     >
       <img src={img} className="" width={80} height={80} alt="" />

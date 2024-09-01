@@ -159,7 +159,7 @@ export default function Header() {
             <div className="col-4 col-lg-2 col-xxl-2">
               <Link to="/" className="ch-header-logo-wrapper">
                 <img
-                  width={190}
+                  width={300}
                   height={60}
                   src={settings?.header_logo}
                   alt="logo"
@@ -296,7 +296,7 @@ export default function Header() {
                 className="ms-2 ms-md-4 d-lg-none mobile-menu-toggle"
               >
                 <svg
-                  fill="#02A95C"
+                  fill="#3271A6"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"

@@ -82,7 +82,7 @@ export default function CampaignCardTwo({
               text={`${progress_percentage}%`}
               styles={buildStyles({
                 textColor: "#091e42",
-                pathColor: `#02a95c`,
+                pathColor: `#3271A6`,
               })}
             />
           </div>

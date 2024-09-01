@@ -12,9 +12,9 @@ module.exports = withMT({
         jost: ["Jost", "sans-serif"],
       },
       colors: {
-        "auc-primary-color": "#02A95C",
-        "auc-primary-hover-color": "#028347",
-        "auc-primary-color-900": "#02A95C",
+        "auc-primary-color": "#3271A6",
+        "auc-primary-hover-color": "#2d485e",
+        "auc-primary-color-900": "#3271A6",
         "auc-primary-color-400": "#E6F6EF",
         "auc-primary-color-300": "#EFF7F5",
         "auc-primary-color-200": "#99CCCC",
