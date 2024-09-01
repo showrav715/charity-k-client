@@ -1,0 +1,16 @@
+.title-box {
+  .sm-title {
+    color: $text-color-900;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .title {
+     color: $text-color-900;
+     span {
+      color: $secondary-color-900;
+     }
+
+  }
+}

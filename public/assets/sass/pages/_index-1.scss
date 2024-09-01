@@ -1,0 +1,531 @@
+/********************** hero section start **********************/
+.ch-hero-section {
+  padding-top: 120px;
+  padding-bottom: 240px;
+
+  @include screen-1200 {
+    padding-top: 80px;
+    padding-bottom: 180px;
+  }
+
+  @include screen-992 {
+    padding-top: 40px;
+  }
+  @include screen-768 {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+
+  .title-box {
+    text-align: center;
+    .sm-title {
+      margin-bottom: 18px;
+    }
+    .title {
+      margin-bottom: 48px;
+      @include screen-768 {
+        margin-bottom: 30px;
+      }
+    }
+    .btn-wrapper {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+// ch-vdo-section
+.ch-vdo-section {
+  height: 816px;
+  position: relative;
+  @include screen-1200 {
+    height: 700px;
+  }
+
+  @include screen-992 {
+    height: 565px;
+  }
+
+  @include screen-768 {
+    height: initial;
+  }
+
+  .section-to-up {
+    position: absolute;
+    top: -190px;
+    width: 100%;
+    @include screen-1400 {
+      top: -153px;
+    }
+    @include screen-1200 {
+      top: -133px;
+    }
+
+    @include screen-768 {
+      position: static;
+      padding: 60px 0px;
+      height: initial;
+    }
+  }
+
+  .video-img-wrapper {
+    position: relative;
+    .green-rec,
+    .red-rec,
+    .rec-shape {
+      position: absolute;
+      z-index: 0;
+      @include screen-768 {
+        display: none;
+      }
+    }
+    .green-rec {
+      left: -15px;
+      bottom: -15px;
+    }
+    .red-rec {
+      right: -15px;
+      top: -15px;
+    }
+    .rec-shape {
+      top: -58px;
+      left: -84px;
+      // @include
+    }
+    .main-img {
+      position: relative;
+      z-index: 1;
+      object-fit: cover;
+      border-radius: 16px;
+      width: 100%;
+      @include screen-1400 {
+        width: 100%;
+      }
+    }
+    .video-btn-wrapper {
+      width: 220px;
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+      z-index: 2;
+      border-top: 12px solid $text-color-900;
+      border-left: 12px solid $text-color-900;
+      border-top-left-radius: 20px;
+      @include screen-768 {
+        background-image: none !important;
+        border: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.vdo-btn {
+  position: relative;
+  svg {
+    @include screen-768 {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+.section-to-up-extended {
+  .vdo-btn {
+    position: absolute;
+  }
+}
+.vdo-btn::after,
+.vdo-btn::before {
+  opacity: 0;
+  position: absolute;
+  top: -16px;
+  left: -18px;
+  content: "";
+  display: block;
+  width: 144px;
+  height: 144px;
+  line-height: 144px;
+  z-index: 90;
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: -1;
+  @include screen-768 {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.vdo-btn::after {
+  border: 8px solid $primary-color-900;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+.vdo-btn::before {
+  border: 10px solid $primary-color-700;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+}
+// ch-supports-section
+.ch-supports-section {
+  margin-top: -257px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding-bottom: 120px;
+  @include screen-1200 {
+    padding-bottom: 80px;
+  }
+  @include screen-768 {
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+}
+
+// ch-about-section
+.ch-about-section {
+  overflow: hidden;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include screen-1200 {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+  @include screen-768 {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  .about-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: rotate(0.28deg);
+    height: 100%;
+    width: 50%;
+  }
+  .about-img {
+    position: relative;
+    max-width: 768px;
+    width: 768px;
+    left: -123px;
+    @include screen-1800 {
+      max-width: 660px;
+      width: 660px;
+      left: -30px;
+    }
+    @include screen-1600 {
+      max-width: 600px;
+      width: 600px;
+      left: 22px;
+    }
+    @include screen-1440 {
+      max-width: 100%;
+      width: 100%;
+      left: 0px;
+    }
+
+  }
+  .about-service-wrapper {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    // margin-bottom: 60px;
+    .single-about-service {
+      width: calc(50% - 12px);
+      @include screen-768 {
+        width: 100%;
+      }
+    }
+  }
+
+  .about-btn {
+    margin-top: 60px;
+    @include screen-992 {
+      margin-top: 30px;
+    }
+  }
+}
+
+// ch-fea-section
+.ch-fea-section {
+  background: $bg-offwhite;
+  padding: 120px 0;
+  @include screen-1200 {
+    padding: 80px 0px;
+  }
+  @include screen-768 {
+    padding: 60px 0px;
+  }
+}
+
+// ch-contact-section
+.ch-contact-section {
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+  &.home1 {
+    height: 525px;
+    padding: 0px;
+    @include screen-1200 {
+      height: 457px;
+    }
+    @include screen-992 {
+      height: initial;
+      padding: 60px 0px;
+    }
+  }
+
+  .contact-shape {
+    position: absolute;
+    right: 7%;
+    z-index: 0;
+    height: 143%;
+
+    @include screen-1600 {
+      right: -5%;
+    }
+    @include screen-1200 {
+      right: -4%;
+    }
+    @include screen-1100 {
+      right: -10%;
+    }
+  }
+}
+
+// .ch-newest-section
+.ch-newest-section {
+  background-color: $bg-offwhite;
+  padding: 120px 0px;
+  @include screen-1200 {
+    padding: 80px 0px;
+  }
+  @include screen-768 {
+    padding: 60px 0px;
+  }
+}
+
+// ch-vounteers-section
+.ch-vounteers-section {
+  background-color: $text-color-900;
+  position: relative;
+  padding: 120px 0px;
+  @include screen-1200 {
+    padding: 80px 0px;
+  }
+  @include screen-768 {
+    padding: 60px 0px;
+  }
+
+  .hand-shape {
+    position: absolute;
+    top: 65px;
+    left: 52px;
+  }
+  .pointer-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+  }
+}
+
+// ch-latest-news-section
+.ch-latest-news-section {
+  padding: 120px 0;
+  overflow: hidden;
+  @include screen-1200 {
+    padding: 80px 0px;
+  }
+  @include screen-768 {
+    padding: 60px 0px;
+  }
+  .news-contents {
+    &.left-content {
+      padding-top: 48px;
+      padding-right: 60px;
+      @include screen-1400 {
+        padding-right: 24px;
+      }
+      @include screen-992 {
+        padding: 0px;
+      }
+    }
+    &.right-content {
+      padding-left: 60px;
+      @include screen-1400 {
+        padding-left: 24px;
+      }
+      @include screen-992 {
+        padding: 0px;
+      }
+    }
+    h3 {
+      margin-bottom: 16px;
+      a {
+        transition: $transition;
+        color: $text-color-900;
+        &:hover {
+          color: $primary-color-900;
+        }
+      }
+    }
+    p {
+      margin-bottom: 16px;
+      a {
+        color: $primary-color-900;
+      }
+    }
+    .author-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .content-box {
+      h5 {
+        margin-bottom: 4px;
+      }
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .latest-img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+//ch-hr
+.ch-hr {
+  background-color: $text-color-600;
+}
+
+// donor-page-wrapper
+.donor-page-wrapper {
+  padding: 120px 0;
+  @include screen-1200 {
+    padding: 80px 0;
+  }
+  @include screen-768 {
+    padding: 60px 0;
+  }
+}
+
+.collapse.show {
+  visibility: visible;
+}
+
+// faq
+.custom-faq-wrapper {
+  .accordion {
+    .accordion-item {
+      border: none;
+      border-bottom: 1px solid $border-color-300;
+    }
+    .accordion-header {
+      .accordion-button {
+        color: $text-color-900;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        background-color: $white-color;
+        padding: 32px 0px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        @include screen-768 {
+          padding: 16px 30px 16px 0;
+        }
+
+        &:focus,
+        &:focus-visible {
+          border: none;
+          outline: none;
+          box-shadow: none;
+        }
+        &::after {
+          content: "\2b";
+          background-image: none;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+        }
+        &[aria-expanded="true"] {
+          color: $primary-color-900;
+          &::after {
+            content: "\f068";
+            color: $primary-color-900;
+          }
+        }
+      }
+    }
+    .accordion-body {
+      color: $text-color-800;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%;
+      padding: 24px 0px;
+      border-top: 1px solid $border-color-300;
+    }
+  }
+}
+
+.gallery-img-wrapper {
+  .gal-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    @include screen-768 {
+      height: 300px;
+    }
+  }
+}
+
+.dynamic-page {
+  padding: 120px 0px;
+  @include screen-1200 {
+    padding: 80px 0px;
+  }
+  @include screen-768 {
+    padding: 60px 0px;
+  }
+}
+
+.ReactGridGallery_custom-overlay {
+  transition: $transition;
+}
+// bg-img-gallary-overlay
+
+.bg-img-gallary-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black-color, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transition;
+  .icon-cls {
+    font-size: 24px;
+    color: $white-color;
+  }
+}

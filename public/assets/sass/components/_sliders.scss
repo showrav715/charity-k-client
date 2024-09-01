@@ -1,0 +1,109 @@
+.slick-slider {
+  position: relative;
+  @include screen-768 {
+    padding: 0 12px;
+  }
+  .slick-slide {
+    margin: 0 15px;
+  }
+
+  .slick-list {
+    margin: 0 -15px;
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+    padding-bottom: 40px;
+    @include screen-768 {
+      padding-bottom: 5px;
+    }
+  }
+
+  .slick-dots {
+    display: flex!important;
+    justify-content: center;
+    gap: 10px;
+    bottom: -60px;
+    // padding-bottom: 74px;
+    li {
+      &.slick-active {
+        button {
+          background-color: $primary-color-900;
+        }
+      }
+      button {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        font-size: 0px;
+        background-color: $primary-color-700;
+        &::before {
+          content: initial;
+        }
+      }
+    }
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: $text-color-400;
+    color: $primary-color-900;
+    border-radius: 50%;
+    z-index: 10;
+    transition: $transition;
+    @include screen-768 {
+      top: 50%;
+    }
+
+    @include screen-1600 {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: $primary-color-900;
+      color: $white-color;
+    }
+  }
+  .next-arrow {
+    right: -43px;
+    @include screen-1600 {
+      right: -23px;
+    }
+    @include screen-768 {
+      right: 0px;
+    }
+    @include screen-576 {
+      right: 40px;
+    }
+  }
+  .prev-arrow {
+    left: -43px;
+    @include screen-1600 {
+      left: -23px;
+    }
+    @include screen-768 {
+      left: 0px;
+    }
+    @include screen-576 {
+      left: 40px;
+    }
+  }
+}
+
+.ch-fea-section {
+  .slick-slider {
+    .prev-arrow,
+    .next-arrow {
+      @include screen-768 {
+        top: 33%;
+      }
+    }
+  }
+}

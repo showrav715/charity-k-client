@@ -1,0 +1,151 @@
+//  primary button
+.ch-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 78%;
+  font-size: 18px;
+  font-family: $template-font;
+  transition: $transition;
+  border: 1px solid transparent;
+  height: 54px;
+  padding: 18px 40px;
+  border-radius: 35px;
+  text-transform: capitalize;
+
+  &.sm-btn {
+    padding: 9px 30px;
+    height: 48px;
+    font-weight: 500;
+    @include screen-1200 {
+      padding: 8px 24px;
+      height: 40px;
+    }
+  }
+  @include screen-1400 {
+    padding: 10px 20px;
+    line-height: 167%;
+  }
+  @include screen-1200 {
+    height: 48px;
+    font-size: 16px;
+  }
+}
+.ch-header-tailwind-btn {
+  @include screen-768 {
+    display: none !important;
+  }
+}
+.ch-white-btn {
+  background-color: $white-color;
+  color: $text-color-900;
+  &:hover {
+    background-color: $primary-color-900;
+    color: $white-color;
+  }
+}
+.ch-dark-btn {
+  background-color: $text-color-900;
+  color: $white-color;
+  &:hover {
+    background-color: $text-color-800;
+  }
+}
+.ch-primary-btn {
+  background-color: $primary-color-900;
+  color: $white-color;
+  &.disabled {
+    background-color: $primary-color-400;
+    color: $text-color-600;
+    &:hover {
+      background-color: $primary-color-400;
+    }
+  }
+  &:hover {
+    background-color: $primary-color-1000;
+  }
+}
+.ch-secondary-btn {
+  background-color: $secondary-color-900;
+  color: $white-color;
+  &.disabled {
+    background-color: $secondary-color-400;
+    color: $text-color-600;
+    &:hover {
+      background-color: $secondary-color-400;
+    }
+  }
+
+  &:hover {
+    background-color: $secondary-color-1000;
+  }
+}
+.ch-primary-btn-outline {
+  border: 1px solid $primary-color-900;
+  color: $primary-color-900;
+  &:hover {
+    background-color: $primary-color-1000;
+    color: $white-color;
+  }
+}
+
+.ch-list-trigger-btn {
+  width: 60px;
+  height: 60px;
+  background-color: $white-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.active {
+    // background-color: $primary-color-900;
+    // border: 1px solid $primary-color-700;
+    svg {
+      fill: $primary-color-900;
+      path {
+        fill: $primary-color-900;
+      }
+    }
+  }
+  svg {
+    fill: $text-color-600;
+    path {
+      fill: $text-color-600;
+    }
+  }
+}
+
+.scroll-top-btn {
+  transition: $transition;
+  &:hover {
+    background-color: $primary-color-900;
+    color: $white-color;
+  }
+}
+
+.ch-pagination-btn {
+  display: flex;
+  padding: 11px 9px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: $white-color;
+  color: $text-color-900;
+  border-radius: 2px;
+  border: 1px solid $primary-color-400;
+  transition: $transition;
+  box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.08);
+  &.active {
+    background-color: $primary-color-1000;
+    color: $white-color;
+  }
+  &:hover {
+    background-color: $primary-color-1000;
+    color: $white-color;
+  }
+}

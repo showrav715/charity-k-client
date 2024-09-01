@@ -1,0 +1,50 @@
+// ch-reg-log-wrapper
+.ch-reg-log-wrapper {
+  padding-top: 60px;
+  @include screen-768 {
+    padding-top: 30px;
+  }
+  .log-res-left-img {
+    position: relative;
+    // right: 35%;
+    // height: 100%;
+    object-fit: cover;
+    @include screen-1400 {
+      width: 100%;
+      object-fit: cover;
+      right: initial;
+    }
+  }
+  .auth-form-wrapper {
+    padding: 40px;
+    border-radius: 12px;
+    background: $white-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.08);
+    .logo {
+      margin-bottom: 32px;
+      width: 200px;
+      object-fit: contain;
+    }
+    @include screen-1200 {
+      padding: 20px;
+      .logo {
+        margin-bottom: 20px;
+        width: 150px;
+      }
+    }
+  }
+  .dont-hv-acc {
+    font-size: 18px;
+    line-height: 120%;
+    a {
+      color: $primary-color-900;
+      transition: $transition;
+      &:hover {
+        color: $primary-color-1000;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.welcome-box {
+    margin-top: 30px;
+    max-width: 632px;
+    width: calc(100% - 24px);
+    padding: 32px 60px;
+    gap: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    text-align: center;
+}
+
+.installer-heading {
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 16px;
+    /* 62.4px */
+}
+
+.installer-req-txt {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 31.2px */
+}
+
+.installer-des {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 28.8px */
+}
+
+.installer-btn {
+    display: flex;
+    height: 60px;
+    padding: 18px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--Text-T000, #FFF);
+    border-radius: 8px;
+    background: #0D6EFD;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-top: 30px;
+    text-transform: capitalize;
+    /* 21.6px */
+}
+
+.installer-list-txt {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: capitalize;
+    /* 23.4px */
+}
+
+.icon-txt-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.req-wrapper {
+    /* width: 200px; */
+    margin: 24px auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; */
+}
+
+.installer-check-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,432 @@
+// ch-hero-section-2
+.ch-hero-section-2 {
+  position: relative;
+  background-position: bottom;
+  padding-bottom: 200px;
+
+  @include screen-992 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .shape {
+    position: absolute;
+
+    &.shape1 {
+      left: 40px;
+      bottom: 115px;
+
+      @include screen-768 {
+        display: none;
+      }
+    }
+
+    &.shape2 {
+      right: 40%;
+      top: 20%;
+
+      @include screen-992 {
+        display: none;
+      }
+    }
+
+    &.shape3 {
+      right: 40px;
+      bottom: 119px;
+
+      @include screen-768 {
+        display: none;
+      }
+    }
+  }
+
+  .title-box {
+    text-align: left;
+
+    @include screen-992 {
+      text-align: center;
+    }
+
+    .title,
+    .sm-title {
+      color: $white-color;
+    }
+
+    .btn-wrapper {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      @include screen-992 {
+        justify-content: center;
+      }
+    }
+  }
+
+  // .hero-img {
+  //   mask-image: url("../images/hero-mask.png");
+  //   mask-mode: alpha;
+  //   mask-size: contain;
+  //   mask-position: center top;
+  //   mask-repeat: no-repeat;
+  //   width: 668px;
+  //   height: 668px;
+  //   object-fit: cover;
+  //   mask-position: 0.2rem 45%;
+  //   @include screen-1440 {
+  //     width: 525px;
+  //     height: 433px;
+  //   }
+  //   @include screen-992 {
+  //     margin: 0 auto;
+  //     mask-position: 2.2rem 45%;
+  //   }
+  //   @include screen-768 {
+  //     mask-position: 0.2rem 45%;
+  //   }
+  // }
+
+  .vdo-wrapper {
+    position: relative;
+    left: 136px;
+    top: 7px;
+    z-index: 0;
+
+    @include screen-1800 {
+      left: 0px;
+      top: 0px;
+    }
+
+    @include screen-992 {
+      padding-bottom: 150px;
+    }
+
+    @include screen-768 {
+      padding-bottom: 120px;
+    }
+
+    @include screen-425 {
+      padding-bottom: 30px;
+    }
+
+    .vdo-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+
+      @include screen-992 {
+        top: 37%;
+      }
+
+      @include screen-425 {
+        top: 45%;
+      }
+
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+
+      &::before,
+      &::after {
+        top: 0;
+        left: 0;
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+// ch-supports-section-2
+.ch-supports-section-2 {
+  margin-top: initial;
+  padding-top: 120px;
+
+  @include screen-1200 {
+    padding-top: 80px;
+  }
+
+  @include screen-768 {
+    padding-top: 60px;
+  }
+}
+
+// ch-fea-section-2
+.ch-fea-section-2 {
+  background-color: $text-color-300;
+}
+
+// ch-contact-section-2
+.ch-contact-section.ch-contact-section-2 {
+  padding: 120px 0px;
+  position: relative;
+  background-size: 100% 100%;
+
+  @include screen-1200 {
+    padding: 80px 0;
+  }
+
+  @include screen-768 {
+    padding: 60px 0;
+  }
+
+  .shape {
+    position: absolute;
+
+    @include screen-768 {
+      display: none;
+    }
+
+    &.shape1 {
+      top: 80px;
+      left: 40px;
+    }
+
+    &.shape2 {
+      bottom: 116px;
+      right: 70px;
+    }
+  }
+
+  .title-box {
+    @include screen-992 {
+      text-align: center;
+    }
+
+    .title {
+      color: $text-color-900 !important;
+    }
+  }
+
+  .contact-img {
+    position: relative;
+    z-index: 90;
+  }
+}
+
+// ch-newest-section-2
+.ch-newest-section-2 {
+  background-color: transparent;
+}
+
+// ch-about-section-2
+.ch-about-section.ch-about-section-2 {
+  @include screen-1200 {
+    padding-top: 80px;
+  }
+
+  @include screen-768 {
+    padding-top: 60px;
+  }
+}
+
+// home-2-counter-section
+.home-2-counter-section {
+  .counter-wrapper {
+    border-radius: 26px;
+    background-color: $text-color-900;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 120px 88px;
+
+    @include screen-992 {
+      padding: 60px 30px;
+      flex-wrap: wrap;
+    }
+
+    .shape {
+      position: absolute;
+
+      &.shape1 {
+        top: 24px;
+        left: 24px;
+
+        @include screen-992 {
+          display: none;
+        }
+      }
+
+      &.shape2 {
+        top: 0px;
+        left: 135px;
+
+        @include screen-768 {
+          left: 0;
+        }
+      }
+
+      &.shape3 {
+        bottom: 0px;
+        right: 0px;
+        width: 144px;
+      }
+
+      &.shape4 {
+        bottom: 22px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include screen-768 {
+          display: none;
+        }
+      }
+    }
+
+    .single-counter {
+      position: relative;
+      z-index: 10;
+      flex-grow: 1;
+
+      @include screen-425 {
+        width: 100%;
+      }
+
+      .counter-amount,
+      .counter-title {
+        color: $white-color;
+        text-align: center;
+      }
+
+      .counter-title {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// ch-latest-news-section-2
+.ch-latest-news-section-2 {
+  position: relative;
+
+  .shape {
+    position: absolute;
+
+    @include screen-768 {
+      display: none;
+    }
+
+    &.shape1 {
+      top: 120px;
+      left: 60px;
+    }
+
+    &.shape2 {
+      bottom: 120px;
+      right: 60px;
+    }
+  }
+}
+
+// home-2-testimonial-section
+.home-2-testimonial-section {
+  position: relative;
+  padding: 120px 0px;
+
+  @include screen-1200 {
+    padding: 80px 0px;
+  }
+
+  @include screen-768 {
+    padding: 60px 0px;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($text-color-900, 0.92);
+    z-index: 0;
+  }
+
+  .left-svg,
+  .right-svg {
+    @include screen-992 {
+      width: 80px;
+    }
+  }
+
+  .left-svg {
+    position: absolute;
+    top: -80px;
+    left: 0px;
+  }
+
+  .right-svg {
+    position: absolute;
+    bottom: -80px;
+    right: 0px;
+  }
+
+  .single-testimonial-two {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+
+    .testi-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      margin-bottom: 40px;
+      color: $white-color;
+    }
+
+    .des {
+      color: $white-color;
+    }
+  }
+}
+
+// home 2 faq section
+.home-2-faq-section {
+  background-color: $white-color;
+  padding: 120px 0;
+
+  @include screen-1200 {
+    padding: 80px 0;
+  }
+
+  @include screen-768 {
+    padding: 60px 0;
+  }
+
+  .faq-img {
+    width: 759px;
+    position: relative;
+    left: 60px;
+
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .custom-faq-wrapper .accordion .accordion-header .accordion-button {
+    padding: 12px 24px;
+    background-color: $text-color-300;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 0;
+  }
+
+  .custom-faq-wrapper .accordion .accordion-body {
+    padding: 20px 24px;
+    font-size: 16px;
+  }
+}

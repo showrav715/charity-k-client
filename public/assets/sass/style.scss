@@ -1,0 +1,42 @@
+/*
+Theme Name: Charity HTML Template
+Author: GeniusOcean
+Author URI: https://codecanyon.net/user/geniusocean/portfolio
+Tags: Charity,blog, agency
+Description:  Charity - HTML5 Template
+Version: 1.0.0
+*/
+
+/************************************** base css **************************************/
+@import "base/variables";
+@import "base/mixin";
+@import "base/reset";
+@import "base/typography";
+@import "base/spacing";
+
+/******************************* theme css **********************************/
+@import "theme/theme-class";
+@import "theme/animations";
+
+/******************************** layouts ******************************/
+@import "layout/header";
+@import "layout/footer";
+
+/******************************** components ******************************/
+@import "components/buttons";
+@import "components/title-box";
+@import "components/single-components";
+@import "components/mobile-menu";
+@import "components/breadcrumb";
+@import "components/sliders";
+
+/****************************** page styles ******************************/
+@import "pages/index-1";
+@import "pages/index-2";
+@import "pages/about";
+@import "pages/campaigns";
+@import "pages/contact-us";
+@import "pages/blog";
+@import "pages/checkout";
+@import "pages/register";
+@import "pages/volunteer-page";

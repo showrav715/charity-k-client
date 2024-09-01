@@ -1,0 +1,97 @@
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 120%;
+  color: $text-color-900;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 130%;
+  color: $text-color-900;
+}
+
+h1 {
+  font-size: 64px;
+  @include screen-1400 {
+    font-size: 48px;
+  }
+  @include screen-768 {
+    font-size: 40px;
+  }
+  @include screen-576 {
+    font-size: 32px;
+  }
+}
+h2 {
+  font-size: 48px;
+  @include screen-1400 {
+    font-size: 32px;
+  }
+  @include screen-768 {
+    font-size: 30px;
+  }
+  @include screen-576 {
+    font-size: 28px;
+  }
+}
+h3 {
+  font-size: 40px;
+  line-height: 120%;
+  @include screen-1400 {
+    font-size: 28px;
+  }
+  @include screen-768 {
+    font-size: 24px;
+  }
+  @include screen-576 {
+    font-size: 22px;
+  }
+}
+h4 {
+  font-size: 32px;
+  @include screen-1400 {
+    font-size: 24px;
+  }
+  @include screen-768 {
+    font-size: 20px;
+  }
+  @include screen-576 {
+    font-size: 18px;
+  }
+}
+h5 {
+  font-size: 24px;
+  @include screen-1400 {
+    font-size: 20px;
+  }
+  @include screen-768 {
+    font-size: 18px;
+  }
+  @include screen-576 {
+    font-size: 16px;
+  }
+}
+h6 {
+  font-size: 20px;
+  @include screen-1400 {
+    font-size: 18px;
+  }
+  @include screen-768 {
+    font-size: 16px;
+  }
+  @include screen-576 {
+    font-size: 14px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 170%;
+  font-weight: 400;
+  @include screen-768 {
+    font-size: 14px;
+  }
+}

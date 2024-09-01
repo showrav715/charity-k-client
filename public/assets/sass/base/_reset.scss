@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: $template-font;
+}
+
+input {
+  outline: 0;
+}
+
+.dashboard-layout {
+  input:focus-visible {
+    outline: 1.8px solid #02a95c !important;
+  }
+  select:focus-visible {
+    outline: 1.8px solid #02a95c !important;
+  }
+}
+
+select {
+  outline: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+.container {
+  @include screen-576 {
+    max-width: 100%;
+  }
+}
